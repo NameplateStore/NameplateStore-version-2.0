@@ -1,10 +1,10 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Brand() {
   return (
     <>
-    <div class="container">
-                <div class="owl-carousel mt-5 mb-5 owl-simple" data-toggle="owl" 
+    <div className="container">
+                <div className="owl-carousel mt-5 mb-5 owl-simple" data-toggle="owl" 
                         data-owl-options='{
                             "nav": false, 
                             "dots": false,
@@ -28,34 +28,34 @@ export default function Brand() {
                                 }
                             }
                         }'>
-                        <a href="/" class="brand">
+                        <Link to="/" className="brand">
                             <img src="assets/images/brands/1.png" alt="Brand Name"/>
-                        </a>
+                        </Link>
 
-                        <a href="/" class="brand">
+                        <Link to="/" className="brand">
                             <img src="assets/images/brands/2.png" alt="Brand Name"/>
-                        </a>
+                        </Link>
 
-                        <a href="/" class="brand">
+                        <Link to="/" className="brand">
                             <img src="assets/images/brands/3.png" alt="Brand Name"/>
-                        </a>
+                        </Link>
 
-                        <a href="/" class="brand">
+                        <Link to="/" className="brand">
                             <img src="assets/images/brands/4.png" alt="Brand Name"/>
-                        </a>
+                        </Link>
 
-                        <a href="/" class="brand">
+                        <Link to="/" className="brand">
                             <img src="assets/images/brands/5.png" alt="Brand Name"/>
-                        </a>
+                        </Link>
 
-                        <a href="/" class="brand">
+                        <Link to="/" className="brand">
                             <img src="assets/images/brands/6.png" alt="Brand Name"/>
-                        </a>
+                        </Link>
                     </div>
                     {/* <!-- End .owl-carousel --> */}
             </div>
-            <div class="container">
-                <hr class="mt-3 mb-6"/>
+            <div className="container">
+                <hr className="mt-3 mb-6"/>
             </div>
             {/* <!-- End .container --> */}
          </>

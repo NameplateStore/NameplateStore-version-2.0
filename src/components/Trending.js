@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Trending() {
   return (
     <>
@@ -13,22 +13,22 @@ export default function Trending() {
        <div className="heading-right">
             <ul className="nav nav-pills nav-border-anim justify-content-center" role="tablist">
                 <li className="nav-item">
-                    <a className="nav-link active" id="trending-all-link" data-toggle="tab" href="#trending-all-tab" role="tab" aria-controls="trending-all-tab" aria-selected="true">All</a>
+                    <Link className="nav-link active" id="trending-all-link" data-toggle="tab" to="#trending-all-tab" role="tab" aria-controls="trending-all-tab" aria-selected="true">All</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" id="trending-tv-link" data-toggle="tab" href="#trending-tv-tab" role="tab" aria-controls="trending-tv-tab" aria-selected="false">TV</a>
+                    <Link className="nav-link" id="trending-tv-link" data-toggle="tab" to="#trending-tv-tab" role="tab" aria-controls="trending-tv-tab" aria-selected="false">TV</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" id="trending-computers-link" data-toggle="tab" href="#trending-computers-tab" role="tab" aria-controls="trending-computers-tab" aria-selected="false">Computers</a>
+                    <Link className="nav-link" id="trending-computers-link" data-toggle="tab" to="#trending-computers-tab" role="tab" aria-controls="trending-computers-tab" aria-selected="false">Computers</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" id="trending-phones-link" data-toggle="tab" href="#trending-phones-tab" role="tab" aria-controls="trending-phones-tab" aria-selected="false">Tablets & Cell Phones</a>
+                    <Link className="nav-link" id="trending-phones-link" data-toggle="tab" to="#trending-phones-tab" role="tab" aria-controls="trending-phones-tab" aria-selected="false">Tablets & Cell Phones</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" id="trending-watches-link" data-toggle="tab" href="#trending-watches-tab" role="tab" aria-controls="trending-watches-tab" aria-selected="false">Smartwatches</a>
+                    <Link className="nav-link" id="trending-watches-link" data-toggle="tab" to="#trending-watches-tab" role="tab" aria-controls="trending-watches-tab" aria-selected="false">Smartwatches</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" id="trending-acc-link" data-toggle="tab" href="#trending-acc-tab" role="tab" aria-controls="trending-acc-tab" aria-selected="false">Accessories</a>
+                    <Link className="nav-link" id="trending-acc-link" data-toggle="tab" to="#trending-acc-tab" role="tab" aria-controls="trending-acc-tab" aria-selected="false">Accessories</Link>
                 </li>
             </ul>
        </div>{/* <!-- End .heading-right --> */}
@@ -37,9 +37,9 @@ export default function Trending() {
     <div className="row">
         <div className="col-xl-5col d-none d-xl-block">
             <div className="banner">
-                <a href="/">
+                <Link to="/">
                     <img src="assets/images/demos/demo-3/banners/banner-4.jpg" alt="banner"/>
-                </a>
+                </Link>
             </div>{/* <!-- End .banner --> */}
         </div>{/* <!-- End .col-xl-5col --> */}
 
@@ -70,25 +70,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-7.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Headphones</a>
+                                    <Link to="/">Headphones</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Bose - SoundSport  wireless headphones</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Bose - SoundSport  wireless headphones</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -100,34 +100,34 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" style={{background: '#69b4ff'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#ff887f'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" style={{background: '#69b4ff'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#ff887f'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
 
                         <div className="product product-2">
                             <figure className="product-media">
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-8.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Video Games</a>
+                                    <Link to="/">Video Games</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Microsoft - Refurbish Xbox One S 500GB</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Microsoft - Refurbish Xbox One S 500GB</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $279.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -143,25 +143,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-new">New</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-9.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Smartwatches</a>
+                                    <Link to="/">Smartwatches</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Apple Watch Series 4 Gold Aluminum Case</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Apple Watch Series 4 Gold Aluminum Case</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $499.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -173,9 +173,9 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
@@ -184,25 +184,25 @@ export default function Trending() {
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
                                 <span className="product-label label-circle label-sale">Sale</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-10.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">TV & Home Theater</a>
+                                    <Link to="/">TV & Home Theater</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Sony - Class LED 2160p Smart 4K Ultra HD</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Sony - Class LED 2160p Smart 4K Ultra HD</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     <span className="new-price">$1,699.99</span>
                                     <span className="old-price">Was $1,999.99</span>
@@ -219,25 +219,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-15.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">TV & Home Theater</a>
+                                    <Link to="/">TV & Home Theater</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Samsung - 55" Class  LED 2160p Smart</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -253,25 +253,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-11.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Laptops</a>
+                                    <Link to="/">Laptops</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">MacBook Pro 13" Display, i5</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $1,199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -310,25 +310,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-new">New</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-13.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Tablets</a>
+                                    <Link to="/">Tablets</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -340,34 +340,34 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
 
                         <div className="product product-2">
                             <figure className="product-media">
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-12.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Audio</a>
+                                    <Link to="/">Audio</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Bose - SoundLink Bluetooth Speaker</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $79.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -384,25 +384,25 @@ export default function Trending() {
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
                                 <span className="product-label label-circle label-sale">Sale</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-14.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Cell Phone</a>
+                                    <Link to="/">Cell Phone</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Google - Pixel 3 XL  128GB</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     <span className="new-price">$35.41</span>
                                     <span className="old-price">Was $41.67</span>
@@ -415,9 +415,9 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" className="active" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" className="active" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
@@ -425,25 +425,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-15.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">TV & Home Theater</a>
+                                    <Link to="/">TV & Home Theater</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Samsung - 55" Class  LED 2160p Smart</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -459,25 +459,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-11.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Laptops</a>
+                                    <Link to="/">Laptops</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">MacBook Pro 13" Display, i5</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $1,199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -516,25 +516,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-15.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">TV & Home Theater</a>
+                                    <Link to="/">TV & Home Theater</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Samsung - 55" Class  LED 2160p Smart</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -550,25 +550,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-11.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Laptops</a>
+                                    <Link to="/">Laptops</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">MacBook Pro 13" Display, i5</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $1,199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -584,25 +584,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-new">New</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-13.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Tablets</a>
+                                    <Link to="/">Tablets</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -614,34 +614,34 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
 
                         <div className="product product-2">
                             <figure className="product-media">
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-12.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Audio</a>
+                                    <Link to="/">Audio</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Bose - SoundLink Bluetooth Speaker</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $79.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -658,25 +658,25 @@ export default function Trending() {
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
                                 <span className="product-label label-circle label-sale">Sale</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-14.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Cell Phone</a>
+                                    <Link to="/">Cell Phone</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Google - Pixel 3 XL  128GB</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     <span className="new-price">$35.41</span>
                                     <span className="old-price">Was $41.67</span>
@@ -689,9 +689,9 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" className="active" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" className="active" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
@@ -722,25 +722,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-11.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Laptops</a>
+                                    <Link to="/">Laptops</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">MacBook Pro 13" Display, i5</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $1,199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -755,25 +755,25 @@ export default function Trending() {
 
                         <div className="product product-2">
                             <figure className="product-media">
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-12.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Audio</a>
+                                    <Link to="/">Audio</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Bose - SoundLink Bluetooth Speaker</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $79.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -789,25 +789,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-new">New</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-13.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Tablets</a>
+                                    <Link to="/">Tablets</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -819,9 +819,9 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
@@ -829,25 +829,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-15.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">TV & Home Theater</a>
+                                    <Link to="/">TV & Home Theater</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Samsung - 55" Class  LED 2160p Smart</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -863,25 +863,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-11.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Laptops</a>
+                                    <Link to="/">Laptops</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">MacBook Pro 13" Display, i5</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $1,199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -898,25 +898,25 @@ export default function Trending() {
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
                                 <span className="product-label label-circle label-sale">Sale</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-14.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title=" "><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title=" "><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Cell Phone</a>
+                                    <Link to="/">Cell Phone</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Google - Pixel 3 XL  128GB</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     <span className="new-price">$35.41</span>
                                     <span className="old-price">Was $41.67</span>
@@ -929,9 +929,9 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" className="active" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" className="active" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
@@ -963,25 +963,25 @@ export default function Trending() {
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
                                 <span className="product-label label-circle label-sale">Sale</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-14.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Cell Phone</a>
+                                    <Link to="/">Cell Phone</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Google - Pixel 3 XL  128GB</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     <span className="new-price">$35.41</span>
                                     <span className="old-price">Was $41.67</span>
@@ -994,9 +994,9 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" className="active" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" className="active" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
@@ -1004,25 +1004,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-11.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Laptops</a>
+                                    <Link to="/">Laptops</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">MacBook Pro 13" Display, i5</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $1,199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -1037,25 +1037,25 @@ export default function Trending() {
 
                         <div className="product product-2">
                             <figure className="product-media">
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-12.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Audio</a>
+                                    <Link to="/">Audio</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Bose - SoundLink Bluetooth Speaker</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $79.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -1071,25 +1071,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-new">New</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-13.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Tablets</a>
+                                    <Link to="/">Tablets</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -1101,9 +1101,9 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}
@@ -1134,25 +1134,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-11.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Laptops</a>
+                                    <Link to="/">Laptops</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">MacBook Pro 13" Display, i5</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $1,199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -1168,25 +1168,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-15.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">TV & Home Theater</a>
+                                    <Link to="/">TV & Home Theater</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Samsung - 55" Class  LED 2160p Smart</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -1202,25 +1202,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-top">Top</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-11.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Laptops</a>
+                                    <Link to="/">Laptops</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">MacBook Pro 13" Display, i5</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $1,199.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -1235,25 +1235,25 @@ export default function Trending() {
 
                         <div className="product product-2">
                             <figure className="product-media">
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-12.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Audio</a>
+                                    <Link to="/">Audio</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Bose - SoundLink Bluetooth Speaker</Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $79.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -1269,25 +1269,25 @@ export default function Trending() {
                         <div className="product product-2">
                             <figure className="product-media">
                                 <span className="product-label label-circle label-new">New</span>
-                                <a href="product.html">
+                                <Link to="product.html">
                                     <img src="assets/images/demos/demo-3/products/product-13.jpg" alt="Product" className="product-image"/>
-                                </a>
+                                </Link>
 
                                 <div className="product-action-vertical">
-                                    <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                    <Link to="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
 
                                 <div className="product-action product-action-dark">
-                                    <a href="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                    <a href="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                    <Link to="/" className="btn-product btn-cart" title="Add to cart"><span>add to cart</span></Link>
+                                    <Link to="popup/quickView.html" className="btn-product btn-quickview" title="Quick view"><span>quick view</span></Link>
                                 </div>{/* <!-- End .product-action --> */}
                             </figure>{/* <!-- End .product-media --> */}
 
                             <div className="product-body">
                                 <div className="product-cat">
-                                    <a href="/">Tablets</a>
+                                    <Link to="/">Tablets</Link>
                                 </div>{/* <!-- End .product-cat --> */}
-                                <h3 className="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3>{/* <!-- End .product-title --> */}
+                                <h3 className="product-title"><Link to="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </Link></h3>{/* <!-- End .product-title --> */}
                                 <div className="product-price">
                                     $899.99
                                 </div>{/* <!-- End .product-price --> */}
@@ -1299,9 +1299,9 @@ export default function Trending() {
                                 </div>{/* <!-- End .rating-container --> */}
 
                                 <div className="product-nav product-nav-dots">
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></a>
-                                    <a href="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></a>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" style={{background: '#edd2c8'}}><span className="sr-only">Color name</span></Link>
+                                    <Link to="/" className="active" style={{background: '#333333'}}><span className="sr-only">Color name</span></Link>
                                 </div>{/* <!-- End .product-nav --> */}
                             </div>{/* <!-- End .product-body --> */}
                         </div>{/* <!-- End .product --> */}

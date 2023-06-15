@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Cta() {
   return (
     <div className="container">
@@ -17,7 +17,7 @@ export default function Cta() {
                                         <p>Get <span className="text-dark font-weight-normal">FREE SHIPPING* & 5% rewards</span> on <br/>every order with Molla Theme rewards program</p>
                                     </div>
                                     {/* <!-- End .cta-text --> */}
-                                    <a href="/" className="btn btn-primary btn-round"><span>Add to Cart for $50.00/yr</span><i className="icon-long-arrow-right"></i></a>
+                                    <Link to="/" className="btn btn-primary btn-round"><span>Add to Cart for $50.00/yr</span><i className="icon-long-arrow-right"></i></Link>
                                 </div>
                                 {/* <!-- End .cta-content --> */}
                             </div>

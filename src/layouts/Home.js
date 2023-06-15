@@ -5,6 +5,11 @@ import Cta from "../components/Cta";
 import Offer from "../components/Offer";
 import Brand from "../components/Brand";
 import Trending from "../components/Trending";
+import Topsell from "../components/Topsell";
+import Iconbox from "../components/Iconbox";
+import Social from "../components/Social";
+import Submodel from "../components/Submodel";
+
 export default function Home() {
   return (
     <div className="main">
@@ -14,6 +19,10 @@ export default function Home() {
       <Offer></Offer>
       <Brand></Brand>
       <Trending></Trending>
+      <Topsell></Topsell>
+      <Iconbox></Iconbox>
+      <Social></Social>
+      <Submodel></Submodel>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
-    <div class="intro-section pt-3 pb-3 mb-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="intro-slider-container slider-container-ratio mb-2 mb-lg-0">
-                    <div class="intro-slider owl-carousel owl-simple owl-dark owl-nav-inside" data-toggle="owl" data-owl-options='{
+    <div className="intro-section pt-3 pb-3 mb-2">
+    <div className="container">
+        <div className="row">
+            <div className="col-lg-8">
+                <div className="intro-slider-container slider-container-ratio mb-2 mb-lg-0">
+                    <div className="intro-slider owl-carousel owl-simple owl-dark owl-nav-inside" data-toggle="owl" data-owl-options='{
                             "nav": false, 
                             "dots": true,
                             "responsive": {
@@ -17,102 +17,102 @@ export default function Hero() {
                                 }
                             }
                         }'>
-                        <div class="intro-slide">
-                            <figure class="slide-image">
+                        <div className="intro-slide">
+                            <figure className="slide-image">
                                 <picture>
-                                    <source media="(max-width: 480px)" srcset="assets/images/demos/demo-3/slider/slide-1-480w.jpg"/>
+                                    <source media="(max-width: 480px)" srcSet="assets/images/demos/demo-3/slider/slide-1-480w.jpg"/>
                                     <img src="assets/images/demos/demo-3/slider/slide-1.jpg" alt=" Desc"/>
                                 </picture>
                             </figure>
 
-                            <div class="intro-content">
-                                <h3 class="intro-subtitle text-primary">Daily Deals</h3>
-                                <h1 class="intro-title">
+                            <div className="intro-content">
+                                <h3 className="intro-subtitle text-primary">Daily Deals</h3>
+                                <h1 className="intro-title">
                                     AirPods <br/>Earphones
                                 </h1>
 
-                                <div class="intro-price">
+                                <div className="intro-price">
                                     <sup>Today:</sup>
-                                    <span class="text-primary">
+                                    <span className="text-primary">
                                         $247<sup>.99</sup>
                                     </span>
                                 </div>
 
-                                <a href="category.html" class="btn btn-primary btn-round">
+                                <Link to="category.html" className="btn btn-primary btn-round">
                                     <span>Click Here</span>
-                                    <i class="icon-long-arrow-right"></i>
-                                </a>
+                                    <i className="icon-long-arrow-right"></i>
+                                </Link>
                             </div> 
                         </div> 
 
-                        <div class="intro-slide">
-                            <figure class="slide-image">
+                        <div className="intro-slide">
+                            <figure className="slide-image">
                                 <picture>
-                                    <source media="(max-width: 480px)" srcset="assets/images/demos/demo-3/slider/slide-2-480w.jpg"/>
+                                    <source media="(max-width: 480px)" srcSet="assets/images/demos/demo-3/slider/slide-2-480w.jpg"/>
                                     <img src="assets/images/demos/demo-3/slider/slide-2.jpg" alt=" Desc"/>
                                 </picture>
                             </figure> 
 
-                            <div class="intro-content">
-                                <h3 class="intro-subtitle text-primary">Deals and Promotions</h3> 
-                                <h1 class="intro-title">
+                            <div className="intro-content">
+                                <h3 className="intro-subtitle text-primary">Deals and Promotions</h3> 
+                                <h1 className="intro-title">
                                     Echo Dot <br/>3rd Gen
                                 </h1> 
 
-                                <div class="intro-price">
-                                    <sup class="intro-old-price">$49,99</sup>
-                                    <span class="text-primary">
+                                <div className="intro-price">
+                                    <sup className="intro-old-price">$49,99</sup>
+                                    <span className="text-primary">
                                         $29<sup>.99</sup>
                                     </span>
                                 </div>
 
-                                <a href="category.html" class="btn btn-primary btn-round">
+                                <Link to="category.html" className="btn btn-primary btn-round">
                                     <span>Click Here</span>
-                                    <i class="icon-long-arrow-right"></i>
-                                </a>
+                                    <i className="icon-long-arrow-right"></i>
+                                </Link>
                             </div> 
                         </div> 
                     </div>
                     
-                    <span class="slider-loader"></span>
+                    <span className="slider-loader"></span>
                 </div>
             </div> 
 
-            <div class="col-lg-4">
-                <div class="intro-banners">
-                    <div class="banner mb-lg-1 mb-xl-2">
-                        <a href= "/">
+            <div className="col-lg-4">
+                <div className="intro-banners">
+                    <div className="banner mb-lg-1 mb-xl-2">
+                        <Link to= "/">
                             <img src="assets/images/demos/demo-3/banners/banner-1.jpg" alt="Banner"/>
-                        </a>
+                        </Link>
 
-                        <div class="banner-content">
-                            <h4 class="banner-subtitle d-lg-none d-xl-block"><a href= "/">Top Product</a></h4> 
-                            <h3 class="banner-title"><a href= "/">Edifier <br/>Stereo Bluetooth</a></h3> 
-                            <a href= "/" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                        <div className="banner-content">
+                            <h4 className="banner-subtitle d-lg-none d-xl-block"><Link to= "/">Top Product</Link></h4> 
+                            <h3 className="banner-title"><Link to= "/">Edifier <br/>Stereo Bluetooth</Link></h3> 
+                            <Link to= "/" className="banner-link">Shop Now<i className="icon-long-arrow-right"></i></Link>
                         </div> 
                     </div>
 
-                    <div class="banner mb-lg-1 mb-xl-2">
-                        <a href= "/">
+                    <div className="banner mb-lg-1 mb-xl-2">
+                        <Link to= "/">
                             <img src="assets/images/demos/demo-3/banners/banner-2.jpg" alt="Banner"/>
-                        </a>
+                        </Link>
 
-                        <div class="banner-content">
-                            <h4 class="banner-subtitle d-lg-none d-xl-block"><a href= "/">Clearance</a></h4> 
-                            <h3 class="banner-title"><a href= "/">GoPro - Fusion 360 <span>Save $70</span></a></h3> 
-                            <a href= "/" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                        <div className="banner-content">
+                            <h4 className="banner-subtitle d-lg-none d-xl-block"><Link to= "/">Clearance</Link></h4> 
+                            <h3 className="banner-title"><Link to= "/">GoPro - Fusion 360 <span>Save $70</span></Link></h3> 
+                            <Link to= "/" className="banner-link">Shop Now<i className="icon-long-arrow-right"></i></Link>
                         </div> 
                     </div>
 
-                    <div class="banner mb-0">
-                        <a href= "/">
+                    <div className="banner mb-0">
+                        <Link to= "/">
                             <img src="assets/images/demos/demo-3/banners/banner-3.jpg" alt="Banner"/>
-                        </a>
+                        </Link>
 
-                        <div class="banner-content">
-                            <h4 class="banner-subtitle d-lg-none d-xl-block"><a href= "/">Featured</a></h4> 
-                            <h3 class="banner-title"><a href= "/">Apple Watch 4 <span>Our Hottest Deals</span></a></h3> 
-                            <a href= "/" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                        <div className="banner-content">
+                            <h4 className="banner-subtitle d-lg-none d-xl-block"><Link to= "/">Featured</Link></h4> 
+                            <h3 className="banner-title"><Link to= "/">Apple Watch 4 <span>Our Hottest Deals</span></Link></h3> 
+                            <Link to= "/" className="banner-link">Shop Now<i className="icon-long-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>

@@ -1,25 +1,25 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="header header-3 header-intro-clearance">
       <div className="header-top ">
         <div className="container">
           <div className="header-left">
-            <a href="tel:#">
-              <i className="icon-phone"></i>Call: +0123 456 789
-            </a>
+            <Link to="tel:#">
+              <i className="icon-phone"></i>Call: 9958494749
+            </Link>
           </div>{" "}
           {/* <!-- End .header-left --> */}
           <div className="header-right">
             <ul className="top-menu">
               <li>
-                <a href="/">Links</a>
+                <Link to="/">Links</Link>
                 <ul>
                   <li>
-                    <a href="#signin-modal" data-toggle="modal">
+                    <Link to="#signin-modal" data-toggle="modal">
                       Sign in / Sign up
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -39,22 +39,22 @@ export default function Header() {
               <i className="icon-bars"></i>
             </button>
 
-            <a href="index.html" className="logo">
+            <Link to="/" className="logo">
               <img
                 src="assets/images/demos/demo-2/logo.pn"
                 alt="NS Logo"
                 width="105"
                 height="25"
               />
-            </a>
+            </Link>
           </div>
           {/* <!-- End .header-left --> */}
           <div className="header-center">
                         <div className="header-search header-search-extended header-search-visible d-none d-lg-block">
-                            <a href= "/" className="search-toggle" role="button"><i className="icon-search"></i></a>
+                            <Link to= "/" className="search-toggle" role="button"><i className="icon-search"></i></Link>
                             <form action= "/" method="get">
                                 <div className="header-search-wrapper search-wrapper-wide">
-                                    <label for="q" className="sr-only">Search</label>
+                                    <label htmlFor="q" className="sr-only">Search</label>
                                     <button className="btn btn-primary" type="submit"><i className="icon-search"></i></button>
                                     <input type="search" className="form-control" name="q" id="q" placeholder="Search product ..." required/>
                                 </div>
@@ -63,57 +63,57 @@ export default function Header() {
                     </div>
                     <div className="header-right">
                         <div className="dropdown compare-dropdown">
-                            <a href= "/" className="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Compare Products" aria-label="Compare Products">
+                            <Link to= "/" className="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Compare Products" aria-label="Compare Products">
                                 <div className="icon">
                                     <i className="icon-random"></i>
                                 </div>
                                 <p>Compare</p>
-                            </a>
+                            </Link>
 
                             <div className="dropdown-menu dropdown-menu-right">
                                 <ul className="compare-products">
                                     <li className="compare-product">
-                                        <a href= "/" className="btn-remove" title="Remove Product"><i className="icon-close"></i></a>
-                                        <h4 className="compare-product-title"><a href="product.html">Blue Night Dress</a></h4>
+                                        <Link to= "/" className="btn-remove" title="Remove Product"><i className="icon-close"></i></Link>
+                                        <h4 className="compare-product-title"><Link to="product.html">Blue Night Dress</Link></h4>
                                     </li>
                                     <li className="compare-product">
-                                        <a href= "/" className="btn-remove" title="Remove Product"><i className="icon-close"></i></a>
-                                        <h4 className="compare-product-title"><a href="product.html">White Long Skirt</a></h4>
+                                        <Link to= "/" className="btn-remove" title="Remove Product"><i className="icon-close"></i></Link>
+                                        <h4 className="compare-product-title"><Link to="product.html">White Long Skirt</Link></h4>
                                     </li>
                                 </ul>
 
                                 <div className="compare-actions">
-                                    <a href= "/" className="action-link">Clear All</a>
-                                    <a href= "/" className="btn btn-outline-primary-2"><span>Compare</span><i className="icon-long-arrow-right"></i></a>
+                                    <Link to= "/" className="action-link">Clear All</Link>
+                                    <Link to= "/" className="btn btn-outline-primary-2"><span>Compare</span><i className="icon-long-arrow-right"></i></Link>
                                 </div>
                             </div>
                         </div> 
 
                         <div className="wishlist">
-                            <a href="wishlist.html" title="Wishlist">
+                            <Link to="wishlist.html" title="Wishlist">
                                 <div className="icon">
                                     <i className="icon-heart-o"></i>
                                     <span className="wishlist-count badge">3</span>
                                 </div>
                                 <p>Wishlist</p>
-                            </a>
+                            </Link>
                         </div> 
 
                         <div className="dropdown cart-dropdown">
-                            <a href= "/" className="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                            <Link to= "/" className="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                                 <div className="icon">
                                     <i className="icon-shopping-cart"></i>
                                     <span className="cart-count">2</span>
                                 </div>
                                 <p>Cart</p>
-                            </a>
+                            </Link>
 
                             <div className="dropdown-menu dropdown-menu-right">
                                 <div className="dropdown-cart-products">
                                     <div className="product">
                                         <div className="product-cart-details">
                                             <h4 className="product-title">
-                                                <a href="product.html">Beige knitted elastic runner shoes</a>
+                                                <Link to="product.html">Beige knitted elastic runner shoes</Link>
                                             </h4>
 
                                             <span className="cart-product-info">
@@ -123,17 +123,17 @@ export default function Header() {
                                         </div> 
 
                                         <figure className="product-image-container">
-                                            <a href="product.html" className="product-image">
+                                            <Link to="product.html" className="product-image">
                                                 <img src="assets/images/products/cart/product-1.jpg" alt="product"/>
-                                            </a>
+                                            </Link>
                                         </figure>
-                                        <a href= "/" className="btn-remove" title="Remove Product"><i className="icon-close"></i></a>
+                                        <Link to= "/" className="btn-remove" title="Remove Product"><i className="icon-close"></i></Link>
                                     </div>
 
                                     <div className="product">
                                         <div className="product-cart-details">
                                             <h4 className="product-title">
-                                                <a href="product.html">Blue utility pinafore denim dress</a>
+                                                <Link to="product.html">Blue utility pinafore denim dress</Link>
                                             </h4>
 
                                             <span className="cart-product-info">
@@ -143,11 +143,11 @@ export default function Header() {
                                         </div> 
 
                                         <figure className="product-image-container">
-                                            <a href="product.html" className="product-image">
+                                            <Link to="product.html" className="product-image">
                                                 <img src="assets/images/products/cart/product-2.jpg" alt="product"/>
-                                            </a>
+                                            </Link>
                                         </figure>
-                                        <a href= "/" className="btn-remove" title="Remove Product"><i className="icon-close"></i></a>
+                                        <Link to= "/" className="btn-remove" title="Remove Product"><i className="icon-close"></i></Link>
                                     </div>
                                 </div>
 
@@ -158,8 +158,8 @@ export default function Header() {
                                 </div>
 
                                 <div className="dropdown-cart-action">
-                                    <a href="cart.html" className="btn btn-primary">View Cart</a>
-                                    <a href="checkout.html" className="btn btn-outline-primary-2"><span>Checkout</span><i className="icon-long-arrow-right"></i></a>
+                                    <Link to="cart.html" className="btn btn-primary">View Cart</Link>
+                                    <Link to="checkout.html" className="btn btn-outline-primary-2"><span>Checkout</span><i className="icon-long-arrow-right"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -173,8 +173,8 @@ export default function Header() {
         <div className="container">
           <div className="header-left">
             <div className="dropdown category-dropdown">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="dropdown-toggle"
                 role="button"
                 data-toggle="dropdown"
@@ -184,42 +184,42 @@ export default function Header() {
                 title="Browse Categories"
               >
                 Browse Categories
-              </a>
+              </Link>
               <div className="dropdown-menu">
                 <nav className="side-nav">
                   <ul className="menu-vertical sf-arrows">
                     <li className="item-lead">
-                      <a href="/">Daily offers</a>
+                      <Link to="/">Daily offers</Link>
                     </li>
                     <li className="item-lead">
-                      <a href="/">Gift Ideas</a>
+                      <Link to="/">Gift Ideas</Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1</a>
+                      <Link to="/">NameplateCat-1</Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1</a>
+                      <Link to="/">NameplateCat-1</Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1</a>
+                      <Link to="/">NameplateCat-1</Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1</a>
+                      <Link to="/">NameplateCat-1</Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1</a>
+                      <Link to="/">NameplateCat-1</Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1 </a>
+                      <Link to="/">NameplateCat-1 </Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1</a>
+                      <Link to="/">NameplateCat-1</Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1</a>
+                      <Link to="/">NameplateCat-1</Link>
                     </li>
                     <li>
-                      <a href="/">NameplateCat-1</a>
+                      <Link to="/">NameplateCat-1</Link>
                     </li>
                   </ul>{" "}
                   {/* <!-- End .menu-vertical --> */}
@@ -235,19 +235,19 @@ export default function Header() {
             <nav className="main-nav">
               <ul className="menu sf-arrows">
                 <li className="megamenu-container active">
-                  <a href="index.html" className="">
+                  <Link to="/" className="">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="category.html" className="">
+                  <Link to="category.html" className="">
                     Shop
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="product.html" className="sf-with-ul">
+                  <Link to="product.html" className="sf-with-ul">
                     Product
-                  </a>
+                  </Link>
                   <div className="megamenu megamenu-sm">
                     <div className="row no-gutters">
                       <div className="col-md-6">
@@ -256,33 +256,33 @@ export default function Header() {
                           {/* <!-- End .menu-title --> */}
                           <ul>
                             <li>
-                              <a href="product.html">Product-1</a>
+                              <Link to="product.html">Product-1</Link>
                             </li>
                             <li>
-                              <a href="product-centered.html">Product-1</a>
+                              <Link to="product-centered.html">Product-1</Link>
                             </li>
                             <li>
-                              <a href="product-extended.html">
+                              <Link to="product-extended.html">
                                 <span>
                                   Product-1
                                   <span className="tip tip-new">New</span>
                                 </span>
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="product-gallery.html">Product-1</a>
+                              <Link to="product-gallery.html">Product-1</Link>
                             </li>
                             <li>
-                              <a href="product-sticky.html">Product-1</a>
+                              <Link to="product-sticky.html">Product-1</Link>
                             </li>
                             <li>
-                              <a href="product-sidebar.html">Product-1</a>
+                              <Link to="product-sidebar.html">Product-1</Link>
                             </li>
                             <li>
-                              <a href="product-fullwidth.html">Product-1</a>
+                              <Link to="product-fullwidth.html">Product-1</Link>
                             </li>
                             <li>
-                              <a href="product-masonry.html">Product-1</a>
+                              <Link to="product-masonry.html">Product-1</Link>
                             </li>
                           </ul>
                         </div>{" "}
@@ -291,7 +291,7 @@ export default function Header() {
                       {/* <!-- End .col-md-6 --> */}
                       <div className="col-md-6">
                         <div className="banner banner-overlay">
-                          <a href="category.html">
+                          <Link to="category.html">
                             <img
                               src="assets/images/menu/banner-2.jpg"
                               alt="Banner"
@@ -307,7 +307,7 @@ export default function Header() {
                               {/* <!-- End .banner-title --> */}
                             </div>{" "}
                             {/* <!-- End .banner-content --> */}
-                          </a>
+                          </Link>
                         </div>{" "}
                         {/* <!-- End .banner --> */}
                       </div>{" "}
@@ -318,18 +318,18 @@ export default function Header() {
                   {/* <!-- End .megamenu megamenu-sm --> */}
                 </li>
                 <li>
-                  <a href="about.html" className="">
+                  <Link to="about.html" className="">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="contact-2.html">Contact 02</a>
+                  <Link to="contact-2.html">Contact 02</Link>
                 </li>
 
                 <li>
-                  <a href="blog.html" className="sf-with-ul">
+                  <Link to="blog.html" className="sf-with-ul">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
               {/* <!-- End .menu --> */}
