@@ -27,12 +27,12 @@ export default function Signmodal() {
                                     <form action="/">
                                         <div className="form-group">
                                             <label htmlFor="singin-email">Username or email address *</label>
-                                            <input type="text" className="form-control" id="singin-email" name="singin-email" required/>
+                                            <input type="text" className="form-control" id="singin-email" name="singin-email" required autoComplete="email"/>
                                         </div>{/* <!-- End .form-group --> */}
 
                                         <div className="form-group">
                                             <label htmlFor="singin-password">Password *</label>
-                                            <input type="password" className="form-control" id="singin-password" name="singin-password" required/>
+                                            <input type="password" className="form-control" id="singin-password" name="singin-password" required autoComplete="current-password"/>
                                         </div>{/* <!-- End .form-group --> */}
 
                                         <div className="form-footer">
@@ -71,12 +71,12 @@ export default function Signmodal() {
                                     <form action="/">
                                         <div className="form-group">
                                             <label htmlFor="register-email">Your email address *</label>
-                                            <input type="email" className="form-control" id="register-email" name="register-email" required/>
+                                            <input type="email" className="form-control" id="register-email" name="register-email" required autoComplete="email"/>
                                         </div>{/* <!-- End .form-group --> */}
 
                                         <div className="form-group">
                                             <label htmlFor="register-password">Password *</label>
-                                            <input type="password" className="form-control" id="register-password" name="register-password" required/>
+                                            <input type="password" className="form-control" id="register-password" name="register-password" required autoComplete="current-password"/>
                                         </div>{/* <!-- End .form-group --> */}
 
                                         <div className="form-footer">
